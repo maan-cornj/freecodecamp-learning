@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">SHARKIE's Client Satisfaction Survey</h1>
+    <p id="description">
+      We value your feedback! Please take a few minutes to complete this survey
+      to help us improve our services. Your insights are important to use
+    </p>
+    <form action="post" id="survey-form">
+      <label for="name" id="name-label"
+        >Name:
+        <input type="text" id="name" placeholder="Enter your name" required
+      /></label>
+      <label for="email" id="email-label"
+        >Email:
+        <input type="email" id="email" placeholder="Enter your email" required
+      /></label>
+      <label for="dropdown"
+        >How likely are you to recommend our services to others?
+        <select id="dropdown">
+          <option value=" " disabled selected>Select your option</option>
+          <option value="5">Very Likely</option>
+          <option value="4">Likely</option>
+          <option value="3">Neutral</option>
+          <option value="2">Unlikely</option>
+          <option value="1">Very Unlikely</option>
+        </select></label
+      >
+      <label
+        >What is the primary purpose for which you availed our services?</label
+      >
+      <label for="personal-use">
+        <input
+          type="radio"
+          class="inline"
+          name="purpose"
+          id="personal-use"
+          value="personal-use"
+          checked
+        />
+        Personal Use</label
+      >
+      <label for="business-use">
+        <input
+          type="radio"
+          class="inline"
+          name="purpose"
+          id="business-use"
+          value="business-use"
+        />
+        Business Use</label
+      >
+      <label for="both">
+        <input
+          type="radio"
+          class="inline"
+          name="purpose"
+          id="both"
+          value="both"
+        />
+        Both
+      </label>
+      <label>Which service(s) did you avail?</label>
+      <label for="web-dev">
+        <input type="checkbox" class="inline" id="web-dev" value="web-dev" />
+        Web Development</label
+      >
+      <label for="desk-app">
+        <input type="checkbox" class="inline" id="desk-app" value="desk-app" />
+        Desktop Application</label
+      >
+      <label for="mobile-app">
+        <input
+          type="checkbox"
+          class="inline"
+          id="mobile-app"
+          value="mobile-app"
+        />
+        Mobile Application</label
+      >
+      <label for="data-analysis">
+        <input
+          type="checkbox"
+          class="inline"
+          id="data-analysis"
+          value="data-analysis"
+        />
+        Data Analysis</label
+      >
+      <label for="design">
+        <input type="checkbox" class="inline" id="design" value="design" />
+        UX/UI Design</label
+      >
+      <label for="notion">
+        <input type="checkbox" class="inline" id="notion" value="notion" />
+        Notion Template</label
+      >
+      <label for="text-area"
+        >Feedback: <textarea id="feedback" rows="5" required></textarea>
+      </label>
+      <label for="number" id="number-label"
+        >Overall Rating:
+        <input
+          type="number"
+          id="number"
+          min="1"
+          max="10"
+          placeholder="Enter your overall rating"
+      /></label>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
